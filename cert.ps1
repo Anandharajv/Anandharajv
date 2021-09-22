@@ -1,8 +1,8 @@
-
-# Variablhttps://github.com/certifi/python-certifi/blob/master/certifi/cacert.pem"
+# Variables
+$url = "https://github.com/certifi/python-certifi/blob/master/certifi/cacert.pem"
 
 # Download the certificates
-Write-Host "Downloading certificates from $url."
+Write-Host "Downloading  certificates from $url."
 $downloader = New-Object System.Net.WebClient
 $rawcerts = $downloader.DownloadString("https://github.com/certifi/python-certifi/blob/master/certifi/cacert.pem")
 
